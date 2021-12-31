@@ -128,4 +128,99 @@ footer .container .content .right ul li a {
 
 .flex {
   display: flex;
+}
+
+#about-us {
+  background-color: #010207;
+  position: relative;
+  height: 100%;
+}
+#about-us .background {
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#about-us .container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+}
+#about-us .container .title {
+  margin: 0;
+  color: white;
+}
+#about-us .container .wrapper-content {
+  margin-top: 50px;
+  background: rgba(229, 229, 229, 0.16);
+  max-width: 500px;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  border-radius: 10px;
+  left: calc(100% - 65%);
+}
+#about-us .container .wrapper-content p {
+  color: white;
+  margin: 0;
+}
+#about-us .container .grid {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#about-us .container .grid .coloms {
+  border: 1px solid #63109A;
+  border-radius: 10px;
+  color: white;
+  background-color: #010207;
+  display: flex;
+  justify-content: space-between;
+}
+#about-us .container .grid .coloms .content {
+  width: 60%;
+}
+#about-us .container .grid .coloms .content .content-wrapper {
+  padding: 5px;
+}
+#about-us .container .grid .coloms .content .content-wrapper h4 {
+  margin: 0;
+  font-size: 12px;
+  padding-top: 10px;
+}
+#about-us .container .grid .coloms .content .content-wrapper p {
+  margin: 0;
+  font-size: 7px;
+}
+#about-us .container .grid .coloms .content p {
+  font-size: 5px;
+  padding: 5px;
+}
+#about-us .container .grid .coloms .content .label {
+  background-color: #63109A;
+  padding: 5px;
+}
+#about-us .container .grid .coloms .content .p-content {
+  font-size: 5px;
+  padding: 5px;
+}
+#about-us .container .grid .coloms .wrapper-poto {
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+  width: 50%;
+  display: block;
+}
+#about-us .container .grid .coloms .wrapper-poto .poto {
+  height: 118px;
+  width: 100%;
+}
+#about-us .container .grid .coloms .wrapper-poto .poto2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
