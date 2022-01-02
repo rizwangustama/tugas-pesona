@@ -284,6 +284,7 @@ footer {
   background-color: #010207;
   position: relative;
   z-index: 1;
+  padding: 150px 0;
 
   .background {
     position: absolute;
@@ -299,7 +300,11 @@ footer {
     z-index: 2;
 
     .title {
-      color: white;
+      color: white!important;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 0;
+      padding-bottom: 20px;
     }
   }
 }
@@ -307,15 +312,22 @@ footer {
 form {
   width: 40%;
   color: white;
+  
+  a{
+    margin-top: 100px;
+    padding: 10px 100px;
+    background-color: #1C0165;
+    border-radius: 5px;
+  }
 }
 
 .group {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  margin-bottom: 10px;
 
   .first {
-    width: 100%;
+    margin-right: 10px;
 
     input {
       width: 210px;
@@ -329,7 +341,6 @@ form {
   }
 
   .last {
-    width: 100%;
 
     input {
       width: 210px;
@@ -346,6 +357,47 @@ input {
   padding: 0 10px;
 }
 
+#contact .container .email {
+  input {
+    width: 450px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 5px;
+  }
+}
+
+#contact .container .radio {
+  margin: 20px 0;
+  h3{
+    margin: 0;
+    font-size: 15px;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    label{
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+}
+
+#contact .container .textarea {
+  margin-top: 20px;
+  textarea {
+    width: 465px;
+    display: block;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+  }
+} 
+#contact label {
+  font-size: 15px;
+  font-weight: 300;
+}
 #work {
   padding: 50px 0;
   padding-bottom: 150px;
@@ -399,4 +451,88 @@ input {
 
 .text-white {
   color: white;
+}
+
+#blog {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(180deg, rgba(99, 16, 154, 0.8) 29.17%, rgba(24, 35, 111, 0.8) 88.54%);
+  .container h1{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .grid-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    .items-blog{
+      position: relative;
+      border-radius:10px;
+      background-color: #010207;
+      padding: 10px;
+      padding-bottom: 30px;
+      img{
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+      }
+      h1 {
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+      }
+      .icons{
+        display: flex;
+        margin: 5px 0;
+        .left{
+          margin-right: 20px;
+        }
+        .left , .right{
+          display: flex;
+          align-items: center;
+          img {
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+          }
+
+          .tanggal {
+            font-size: 8px;
+            color: white;
+            margin: 0;
+          }
+        }
+        
+      }
+      .deskription {
+        margin: 20px 0; 
+        p{
+          color: white;
+          font-size: 8px;
+          font-weight: 300!important;
+        }
+        a {
+          font-size: 8px !important;
+          font-weight: 300 !important;
+          padding-bottom: 5px;
+          border-bottom: 1px solid white;
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+.text-justify{
+  text-align: justify;
+}
+
+.py-4{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
