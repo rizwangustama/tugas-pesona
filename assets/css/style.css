@@ -33,7 +33,14 @@ ul li {
 }
 ul li a {
   font-size: 16px;
-  color: white;
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+a {
+  font-size: 16px;
+  color: white !important;
+  font-weight: 400 !important;
 }
 
 nav {
@@ -223,4 +230,110 @@ footer .container .content .right ul li a {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+#contact {
+  background-color: #010207;
+  position: relative;
+  z-index: 1;
+}
+#contact .background {
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#contact .container {
+  position: relative;
+  z-index: 2;
+}
+#contact .container .title {
+  color: white;
+}
+
+form {
+  width: 40%;
+  color: white;
+}
+
+.group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.group .first {
+  width: 100%;
+}
+.group .first input {
+  width: 210px;
+}
+.group .first label {
+  font-weight: 500;
+  font-size: 12px;
+}
+.group .last {
+  width: 100%;
+}
+.group .last input {
+  width: 210px;
+}
+
+input {
+  display: block;
+  height: 38px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #000000;
+  padding: 0 10px;
+}
+
+#work {
+  padding: 50px 0;
+  padding-bottom: 150px;
+  background: linear-gradient(180deg, rgba(99, 16, 154, 0.8) 29.17%, rgba(24, 35, 111, 0.8) 88.54%);
+}
+#work .container h1 {
+  font-size: 30px;
+}
+#work .container .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 60px;
+}
+#work .container .grid .items {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+#work .container .grid .items a {
+  width: 100% !important;
+}
+#work .container .grid .items a img {
+  width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100% !important;
+}
+
+.grid .wrapper {
+  height: 100%;
+}
+.grid .wrapper p {
+  font-size: 16px;
+  color: white !important;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -1,18 +1,21 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
 }
+
 .container {
   padding: 0 88px;
 }
+
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 88px;
 }
+
 body {
   margin: 0;
 }
@@ -26,19 +29,30 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
+
   li {
     padding: 10px;
-    a{
+
+    a {
       font-size: 16px;
-      color: white;
+      color: white!important;
+      font-weight: 400!important;
     }
   }
 }
 
+a {
+  font-size: 16px;
+  color: white !important;
+  font-weight: 400 !important;
+}
+
 nav {
   background-color: #010207;
+
   .login {
     display: flex;
+
     a {
       color: white;
       padding-left: 10px;
@@ -51,7 +65,8 @@ nav {
   overflow: hidden;
   height: 639px;
   background-color: #010207;
-  img{
+
+  img {
     position: absolute;
     top: 0;
     z-index: 1;
@@ -60,14 +75,16 @@ nav {
     height: 100%;
     width: 100%;
   }
-  .container{
+
+  .container {
     position: relative;
     z-index: 2;
     height: 100%;
     display: flex;
     align-items: center;
-    .content{
-      h1{
+
+    .content {
+      h1 {
         color: white;
         font-size: 35px;
       }
@@ -75,35 +92,44 @@ nav {
   }
 }
 
-footer{
+footer {
   background-color: #010207;
   color: white;
-  .container{
+
+  .container {
     padding-top: 65px;
     padding-bottom: 65px;
-    h1{
+
+    h1 {
       margin: 0;
       color: white;
       font-size: 18px;
     }
-    .content{
+
+    .content {
       display: flex;
-      .footer-colums{
+
+      .footer-colums {
         margin-right: 90px;
         width: 25%;
-        .subtitle{
+
+        .subtitle {
           font-size: 14px;
           font-weight: normal;
         }
+
         .flex {
           margin-top: 20px;
+
           .items:nth-child(2) {
             margin-left: 30px;
           }
-          .items{
-            img{
+
+          .items {
+            img {
               display: flex;
             }
+
             p {
               margin: 0;
               font-size: 12px;
@@ -111,18 +137,22 @@ footer{
           }
         }
       }
-      .center{
-        .flex{
+
+      .center {
+        .flex {
           display: flex;
           align-items: center;
         }
       }
+
       .right {
-        ul{
+        ul {
           display: block;
+
           li {
             padding: 5px 0;
-            a{
+
+            a {
               font-size: 12px;
             }
           }
@@ -130,33 +160,37 @@ footer{
       }
     }
   }
-} 
+}
 
 .flex {
   display: flex;
 }
 
 
-#about-us{
+#about-us {
   background-color: #010207;
   position: relative;
   height: 100%;
-  .background{
+
+  .background {
     position: absolute;
     top: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  .container{
+
+  .container {
     padding-top: 50px;
     padding-bottom: 100px;
     position: relative;
-    .title{
+
+    .title {
       margin: 0;
       color: white;
     }
-    .wrapper-content{
+
+    .wrapper-content {
       margin-top: 50px;
       background: rgba(229, 229, 229, 0.16);
       max-width: 500px;
@@ -165,64 +199,76 @@ footer{
       top: 0;
       border-radius: 10px;
       left: calc(100% - 65%);
+
       p {
         color: white;
         margin: 0;
       }
     }
-    
-    .grid{
+
+    .grid {
       margin-top: 200px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       column-gap: 10px;
-      .coloms{
+
+      .coloms {
         border: 1px solid #63109A;
         border-radius: 10px;
         color: white;
         background-color: #010207;
         display: flex;
         justify-content: space-between;
-        .content{
+
+        .content {
           width: 60%;
-          .content-wrapper{
+
+          .content-wrapper {
             padding: 5px;
-            h4{
+
+            h4 {
               margin: 0;
               font-size: 12px;
               padding-top: 10px;
             }
-            p{
+
+            p {
               margin: 0;
               font-size: 7px;
             }
           }
-          p{
+
+          p {
             font-size: 5px;
             padding: 5px;
           }
+
           .label {
             background-color: #63109A;
             padding: 5px;
           }
-          .p-content{
+
+          .p-content {
             font-size: 5px;
             padding: 5px;
           }
 
 
         }
-        .wrapper-poto{
+
+        .wrapper-poto {
           overflow: hidden;
           position: relative;
           padding: 5px;
           width: 50%;
           display: block;
+
           .poto {
             height: 118px;
             width: 100%;
           }
-          .poto2{
+
+          .poto2 {
             position: absolute;
             right: 0;
             bottom: 0;
@@ -234,3 +280,123 @@ footer{
 }
 
 
+#contact {
+  background-color: #010207;
+  position: relative;
+  z-index: 1;
+
+  .background {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    .title {
+      color: white;
+    }
+  }
+}
+
+form {
+  width: 40%;
+  color: white;
+}
+
+.group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .first {
+    width: 100%;
+
+    input {
+      width: 210px;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 12px;
+    }
+
+  }
+
+  .last {
+    width: 100%;
+
+    input {
+      width: 210px;
+    }
+  }
+}
+
+input {
+  display: block;
+  height: 38px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #000000;
+  padding: 0 10px;
+}
+
+#work {
+  padding: 50px 0;
+  padding-bottom: 150px;
+  background: linear-gradient(180deg, rgba(99, 16, 154, 0.8) 29.17%, rgba(24, 35, 111, 0.8) 88.54%);
+
+  .container {
+    h1 {
+      font-size: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 20px;
+      row-gap: 60px;
+
+      .items {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+
+        a {
+          width: 100% !important;
+
+          img {
+            width: 100% !important;
+            object-fit: cover;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grid{
+  .wrapper{
+    height: 100%;
+    p{
+      font-size: 16px;
+      color: white!important;
+      font-weight: 400;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
